@@ -66,6 +66,7 @@ module.exports = class GeneratorGeneratorcs extends yeoman.generators.Base
     @template 'travis.yml', '.travis.yml'
     @template 'README.md'
     @template 'LICENSE'
+    @template '_Gruntfile.coffee', 'Gruntfile.coffee'
 
   gitfiles: ->
     @copy 'gitattributes', '.gitattributes'

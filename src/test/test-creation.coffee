@@ -23,6 +23,7 @@ describe 'Generator generator', ->
       ".gitattributes",
       ".jshintrc",
       ".travis.yml",
+      "Gruntfile.coffee",
       "src/app/index.coffee",
       "src/app/templates/_package.json",
       "src/app/templates/_bower.json"

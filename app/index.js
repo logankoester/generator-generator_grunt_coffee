@@ -93,7 +93,8 @@
       this.template('jshintrc', '.jshintrc');
       this.template('travis.yml', '.travis.yml');
       this.template('README.md');
-      return this.template('LICENSE');
+      this.template('LICENSE');
+      return this.template('_Gruntfile.coffee', 'Gruntfile.coffee');
     };
 
     GeneratorGeneratorcs.prototype.gitfiles = function() {
