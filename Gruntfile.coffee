@@ -53,13 +53,15 @@ module.exports = (grunt) ->
         files: 'src/**/*'
         tasks: ['default']
 
-  
+    mochacli:
+      all: ['test/**/*.js']
+
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-contrib-copy'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
-  grunt.loadNpmTasks 'grunt-mocha'
+  grunt.loadNpmTasks 'grunt-mocha-cli'
   
   grunt.registerTask 'build', ['clean', 'copy', 'coffee']
-  grunt.registerTask 'test', ['build']
+  grunt.registerTask 'test', ['build', 'mochacli']
   grunt.registerTask 'default', ['test']
