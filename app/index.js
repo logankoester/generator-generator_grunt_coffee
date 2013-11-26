@@ -90,7 +90,6 @@
     GeneratorGeneratorcs.prototype.projectfiles = function() {
       this.template('_package.json', 'package.json');
       this.template('editorconfig', '.editorconfig');
-      this.template('jshintrc', '.jshintrc');
       this.template('travis.yml', '.travis.yml');
       this.template('README.md');
       this.template('LICENSE');
@@ -111,7 +110,6 @@
 
     GeneratorGeneratorcs.prototype.copyTemplates = function() {
       this.copy('editorconfig', 'src/app/templates/editorconfig');
-      this.copy('jshintrc', 'src/app/templates/jshintrc');
       this.copy('travis.yml', 'src/app/templates/travis.yml');
       this.copy('src/app/templates/_package.json', 'src/app/templates/_package.json');
       return this.copy('src/app/templates/_bower.json', 'src/app/templates/_bower.json');

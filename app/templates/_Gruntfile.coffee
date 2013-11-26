@@ -4,7 +4,6 @@ module.exports = (grunt) ->
 
     clean:
       app: ['app/*']
-      subgenerator: ['subgenerator/*']
       test: ['test/*']
 
     copy:
@@ -14,16 +13,10 @@ module.exports = (grunt) ->
         src: 'templates/**/*'
         dest: 'app/'
 
-      subgenerator:
-        expand: true
-        cwd: 'src/subgenerator'
-        src: 'templates/**/*'
-        dest: 'subgenerator/'
-
       test:
         expand: true
         cwd: 'src/test'
-        src: ['temp/**/*', 'tempsub/**/*']
+        src: ['temp/**/*']
         dest: 'test/'
 
     coffee:
@@ -32,13 +25,6 @@ module.exports = (grunt) ->
         cwd: 'src/app/'
         src: 'index.coffee'
         dest: 'app/'
-        ext: '.js'
-
-      subgenerator:
-        expand: true
-        cwd: 'src/subgenerator/'
-        src: 'index.coffee'
-        dest: 'subgenerator/'
         ext: '.js'
 
       test:

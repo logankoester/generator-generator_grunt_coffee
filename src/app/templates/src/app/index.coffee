@@ -32,4 +32,3 @@ module.exports = class <%= _.classify(generatorName) %>Generator extends yeoman.
 
   projectfiles: ->
     @copy 'editorconfig', '.editorconfig'
-    @copy 'jshintrc', '.jshintrc'

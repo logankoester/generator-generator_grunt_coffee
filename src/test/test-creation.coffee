@@ -21,7 +21,6 @@ describe 'Generator generator', ->
       ],
       ".gitignore",
       ".gitattributes",
-      ".jshintrc",
       ".travis.yml",
       "Gruntfile.coffee",
       "src/app/index.coffee",

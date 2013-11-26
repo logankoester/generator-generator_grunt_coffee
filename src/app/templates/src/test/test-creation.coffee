@@ -15,7 +15,6 @@ describe '<%= generatorName %> generator', ->
   it 'creates expected files', (done) ->
     expected = [
       # add files you expect to exist here.
-      '.jshintrc',
       '.editorconfig'
     ]
 

@@ -52,7 +52,6 @@ module.exports = class GeneratorGeneratorcs extends yeoman.generators.Base
   userInfo: ->
     done = @async()
 
-    #jshint camelcase:false
     githubUserInfo @githubUser, (res) ->
       @realname = res.name
       @email = res.email
@@ -62,7 +61,6 @@ module.exports = class GeneratorGeneratorcs extends yeoman.generators.Base
   projectfiles: ->
     @template '_package.json', 'package.json'
     @template 'editorconfig', '.editorconfig'
-    @template 'jshintrc', '.jshintrc'
     @template 'travis.yml', '.travis.yml'
     @template 'README.md'
     @template 'LICENSE'
@@ -80,7 +78,6 @@ module.exports = class GeneratorGeneratorcs extends yeoman.generators.Base
 
   copyTemplates: ->
     @copy 'editorconfig', 'src/app/templates/editorconfig'
-    @copy 'jshintrc', 'src/app/templates/jshintrc'
     @copy 'travis.yml', 'src/app/templates/travis.yml'
     @copy 'src/app/templates/_package.json', 'src/app/templates/_package.json'
     @copy 'src/app/templates/_bower.json', 'src/app/templates/_bower.json'
