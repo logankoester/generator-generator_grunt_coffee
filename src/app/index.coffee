@@ -72,19 +72,20 @@ module.exports = class GeneratorGeneratorcs extends yeoman.generators.Base
     @copy 'gitignore', '.gitignore'
 
   app: ->
-    @mkdir 'app'
-    @mkdir 'app/templates'
-    @template 'app/index.js'
-    @template 'app/index.coffee'
+    @mkdir 'src'
+    @mkdir 'src/app'
+    @mkdir 'src/app/templates'
+    @template 'src/app/index.coffee'
 
   copyTemplates: ->
-    @copy 'editorconfig', 'app/templates/editorconfig'
-    @copy 'jshintrc', 'app/templates/jshintrc'
-    @copy 'travis.yml', 'app/templates/travis.yml'
-    @copy 'app/templates/_package.json', 'app/templates/_package.json'
-    @copy 'app/templates/_bower.json', 'app/templates/_bower.json'
+    @copy 'editorconfig', 'src/app/templates/editorconfig'
+    @copy 'jshintrc', 'src/app/templates/jshintrc'
+    @copy 'travis.yml', 'src/app/templates/travis.yml'
+    @copy 'src/app/templates/_package.json', 'src/app/templates/_package.json'
+    @copy 'src/app/templates/_bower.json', 'src/app/templates/_bower.json'
 
   tests: ->
-    @mkdir 'test'
-    @template 'test-load.coffee', 'test/test-load.coffee'
-    @template 'test-creation.coffee', 'test/test-creation.coffee'
+    @mkdir 'src'
+    @mkdir 'src/test'
+    @template 'src/test/test-load.coffee', 'src/test/test-load.coffee'
+    @template 'src/test/test-creation.coffee', 'src/test/test-creation.coffee'

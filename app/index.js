@@ -102,24 +102,25 @@
     };
 
     GeneratorGeneratorcs.prototype.app = function() {
-      this.mkdir('app');
-      this.mkdir('app/templates');
-      this.template('app/index.js');
-      return this.template('app/index.coffee');
+      this.mkdir('src');
+      this.mkdir('src/app');
+      this.mkdir('src/app/templates');
+      return this.template('src/app/index.coffee');
     };
 
     GeneratorGeneratorcs.prototype.copyTemplates = function() {
-      this.copy('editorconfig', 'app/templates/editorconfig');
-      this.copy('jshintrc', 'app/templates/jshintrc');
-      this.copy('travis.yml', 'app/templates/travis.yml');
-      this.copy('app/templates/_package.json', 'app/templates/_package.json');
-      return this.copy('app/templates/_bower.json', 'app/templates/_bower.json');
+      this.copy('editorconfig', 'src/app/templates/editorconfig');
+      this.copy('jshintrc', 'src/app/templates/jshintrc');
+      this.copy('travis.yml', 'src/app/templates/travis.yml');
+      this.copy('src/app/templates/_package.json', 'src/app/templates/_package.json');
+      return this.copy('src/app/templates/_bower.json', 'src/app/templates/_bower.json');
     };
 
     GeneratorGeneratorcs.prototype.tests = function() {
-      this.mkdir('test');
-      this.template('test-load.coffee', 'test/test-load.coffee');
-      return this.template('test-creation.coffee', 'test/test-creation.coffee');
+      this.mkdir('src');
+      this.mkdir('src/test');
+      this.template('src/test/test-load.coffee', 'src/test/test-load.coffee');
+      return this.template('src/test/test-creation.coffee', 'src/test/test-creation.coffee');
     };
 
     return GeneratorGeneratorcs;

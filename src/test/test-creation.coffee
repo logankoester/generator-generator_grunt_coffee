@@ -14,7 +14,19 @@ describe 'Generator generator', ->
 
   it 'creates expected files', (done) =>
 
-    expected = [["package.json", /"name": "generator-temp"/], ".gitignore", ".gitattributes", ".jshintrc", ".travis.yml", "app/index.js", "app/templates/_package.json", "app/templates/_bower.json"]
+    expected = [
+      [
+        "package.json",
+        /"name": "generator-temp"/
+      ],
+      ".gitignore",
+      ".gitattributes",
+      ".jshintrc",
+      ".travis.yml",
+      "src/app/index.coffee",
+      "src/app/templates/_package.json",
+      "src/app/templates/_bower.json"
+    ]
     
     # Patch the user info to not run into rate limits on travis
     @app.userInfo = ->
@@ -38,7 +50,11 @@ describe "Subgenerator subgenerator", ->
       done()
 
   it "creates expected files", (done) =>
-    expected = ["foo/index.coffee", "foo/templates/somefile.coffee"]
+    expected = [
+      "foo/index.coffee",
+      "foo/templates/somefile.coffee"
+    ]
+
     @app.run {}, ->
       helpers.assertFiles expected
       done()

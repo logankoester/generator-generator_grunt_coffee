@@ -19,7 +19,7 @@
     });
     return it('creates expected files', function(done) {
       var expected;
-      expected = [["package.json", /"name": "generator-temp"/], ".gitignore", ".gitattributes", ".jshintrc", ".travis.yml", "app/index.js", "app/templates/_package.json", "app/templates/_bower.json"];
+      expected = [["package.json", /"name": "generator-temp"/], ".gitignore", ".gitattributes", ".jshintrc", ".travis.yml", "src/app/index.coffee", "src/app/templates/_package.json", "src/app/templates/_bower.json"];
       _this.app.userInfo = function() {
         this.realname = "Tyrion Lannister";
         this.email = "imp@casterlyrock.com";
