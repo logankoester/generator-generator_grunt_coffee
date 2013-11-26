@@ -30,8 +30,6 @@ describe 'Generator generator', ->
       helpers.assertFiles expected
       done()
 
-
-
 describe "Subgenerator subgenerator", ->
   beforeEach (done) =>
     helpers.testDirectory path.join(__dirname, "temp"), (err) =>
