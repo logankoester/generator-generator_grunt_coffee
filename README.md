@@ -1,43 +1,56 @@
-# Yeoman Generator for CoffeeScript Yeoman Generators
-[![Build Status](https://secure.travis-ci.org/yeoman/generator-generator.png?branch=master)](https://travis-ci.org/yeoman/generator-generator)
+## Yeoman Generator for Grunt-based CoffeeScript Yeoman Generators
 
-Fork of [generator-generator](https://github.com/yeoman/generator-generator) which is maintained by: [Pascal Hartig](https://github.com/passy)
+`generator-generator_grunt_coffee` is a tool for generating
+[Yeoman generators](http://yeoman.io/generators.html) that use a
+[Grunt](http://gruntjs.com/)-based development workflow and the
+[CoffeeScript](http://coffeescript.org/) programming language.
 
-![Yo dawg, I heard you like generators?](http://i.imgur.com/2gqiift.jpg)
+Many thanks to [https://github.com/tuxracer/generator-generatorcs](generator-generatorcs) for inspiring this fork.
 
-`generator-generatorcs` scaffolds out a new basic Yeoman generator with some
-sensible defaults.
+## Key differences from [generator-generator](https://npmjs.org/package/generator-generator)
+
+* Adds a `Gruntfile.coffee` for your generator including configuration for...
+  * grunt-contrib-clean
+  * grunt-contrib-coffee
+  * grunt-contrib-copy
+  * grunt-contrib-watch
+  * grunt-mocha-cli
+* Moves the `app/` and `test/` directories into `src/`, which contain `.coffee` files that
+will be compiled to their original locations by the `grunt build` task.
+* Removes `jshint`, as presumably you are writing your generator in CoffeeScript and not JS.
+* Is itself written in CoffeeScript.
 
 ## Commands
 
-* `yo generatorcs` shows a wizard for generating a new generator
-* `yo generatorcs:subgenerator NAME` generates a subgenerator with the name NAME
+* `yo generator_grunt_coffee` shows a wizard for generating a new generator
+* `yo generator_grunt_coffee:subgenerator NAME` generates a subgenerator with the name NAME
 
 ## What do you get?
 
-`generator-generatorcs` scaffolds out a complete project directory structure for
+`generator_grunt_coffee` scaffolds out a complete project directory structure for
 you.
 
     .
-    ├── app
-    │   ├── index.coffee
-    │   └── templates
-    │       ├── editorconfig
-    │       └── jshintrc
-    ├── .editorconfig
-    ├── .gitattributes
-    ├── .gitignore
-    ├── .jshintrc
+    ├── Gruntfile.coffee
     ├── LICENSE
+    ├── node_modules
     ├── package.json
     ├── README.md
-    └── test
-        ├── test-creation.coffee
-        └── test-load.coffee
+    └── src
+      ├── app
+      │   ├── index.coffee
+      │   └── templates
+      │       ├── _bower.json
+      │       ├── editorconfig
+      │       ├── _package.json
+      │       └── travis.yml
+      └── test
+      ├── test-creation.coffee
+      └── test-load.coffee
 
 ## Getting started
-- Install: `npm install -g generator-generatorcs`
-- Run: `yo generatorcs`
+- Install: `npm install -g generator-generator_grunt_coffee`
+- Run: `yo generator_grunt_coffee`
 
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)

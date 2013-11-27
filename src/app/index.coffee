@@ -19,7 +19,7 @@ githubUserInfo = (name, cb) ->
     throw err if err
     cb JSON.parse JSON.stringify res
 
-module.exports = class GeneratorGeneratorcs extends yeoman.generators.Base
+module.exports = class GeneratorGeneratorGruntCoffee extends yeoman.generators.Base
   constructor: (args, options) ->
     yeoman.generators.Base.apply this, arguments
     @pkg = JSON.parse @readFileAsString path.join __dirname, '../package.json'

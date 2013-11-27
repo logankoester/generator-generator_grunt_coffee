@@ -1,5 +1,5 @@
 {
-  "name": "grunt-generator-generatorcs",
+  "name": "generator-generator_grunt_coffee",
   "version": "0.3.1",
   "description": "Grunt-powered CoffeeScript Generator Generator for Yeoman",
   "keywords": [
