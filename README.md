@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/logankoester/generator-generator_grunt_coffee.png)](https://travis-ci.org/logankoester/generator-generator_grunt_coffee)
 [![Dependency Status](https://david-dm.org/logankoester/generator-generator_grunt_coffee.png)](https://david-dm.org/logankoester/generator-generator_grunt_coffee)
+[![devDependency Status](https://david-dm.org/logankoester/generator-generator_grunt_coffee/dev-status.png)](https://david-dm.org/logankoester/generator-generator_grunt_coffee#info=devDependencies)
 
 `generator-generator_grunt_coffee` is a tool for generating
 [Yeoman generators](http://yeoman.io/generators.html) that use a
@@ -57,3 +58,7 @@ you.
 
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/logankoester/generator-generator_grunt_coffee/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
