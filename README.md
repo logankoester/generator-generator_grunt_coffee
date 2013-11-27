@@ -58,3 +58,7 @@ you.
 
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/logankoester/generator-generator_grunt_coffee/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
