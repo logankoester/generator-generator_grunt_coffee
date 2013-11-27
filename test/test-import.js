@@ -4,7 +4,7 @@
 
   assert = require("assert");
 
-  describe("Generator generator", function() {
+  describe("Generator generator_grunt_coffee", function() {
     return it("can be imported without blowing up", function() {
       var app;
       app = require("../app");

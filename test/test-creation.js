@@ -12,7 +12,7 @@
         if (err) {
           return done(err);
         }
-        _this.app = helpers.createGenerator('generator:app', ['../../app']);
+        _this.app = helpers.createGenerator('generator_grunt_coffee:app', ['../../app']);
         _this.app.options['skip-install'] = true;
         return done();
       });
@@ -43,7 +43,7 @@
         if (err) {
           return done(err);
         }
-        _this.app = helpers.createGenerator("generator:subgenerator", ["../../subgenerator"], ["foo"]);
+        _this.app = helpers.createGenerator("generator_grunt_coffee:subgenerator", ["../../subgenerator"], ["foo"]);
         return done();
       });
     });

@@ -8,7 +8,7 @@ describe 'Generator generator', ->
   beforeEach (done) =>
     helpers.testDirectory path.join(__dirname, 'temp'), (err) =>
       return done(err)  if err
-      @app = helpers.createGenerator('generator:app', ['../../app'])
+      @app = helpers.createGenerator('generator_grunt_coffee:app', ['../../app'])
       @app.options['skip-install'] = true
       done()
 
@@ -46,7 +46,7 @@ describe "Subgenerator subgenerator", ->
   beforeEach (done) =>
     helpers.testDirectory path.join(__dirname, "temp"), (err) =>
       return done(err)  if err
-      @app = helpers.createGenerator("generator:subgenerator", ["../../subgenerator"], ["foo"])
+      @app = helpers.createGenerator("generator_grunt_coffee:subgenerator", ["../../subgenerator"], ["foo"])
       done()
 
   it "creates expected files", (done) =>
