@@ -1,6 +1,7 @@
 ### Yeoman Generator for Grunt-based CoffeeScript Yeoman Generators
 
 [![Build Status](https://travis-ci.org/logankoester/generator-generator_grunt_coffee.png)](https://travis-ci.org/logankoester/generator-generator_grunt_coffee)
+[![Dependency Status](https://david-dm.org/logankoester/generator-generator_grunt_coffee.png)](https://david-dm.org/logankoester/generator-generator_grunt_coffee)
 
 `generator-generator_grunt_coffee` is a tool for generating
 [Yeoman generators](http://yeoman.io/generators.html) that use a
