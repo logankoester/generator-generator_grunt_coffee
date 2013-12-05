@@ -1,35 +1,35 @@
 {
   "name": "generator-generator_grunt_coffee",
-  "version": "0.3.1",
+  "version": "0.0.1",
   "description": "Grunt-powered CoffeeScript Generator Generator for Yeoman",
   "keywords": [
     "yeoman-generator",
     "coffeescript",
     "grunt"
   ],
-  "homepage": "https://github.com/logankoester/grunt-generator-generatorcs",
-  "bugs": "https://github.com/logankoester/grunt-generator-generatorcs/issues",
+  "homepage": "https://github.com/logankoester/generator-generator_grunt_coffee",
+  "bugs": "https://github.com/logankoester/generator-generator_grunt_coffee/issues",
   "author": {
-    "name": "Derek Petersen",
-    "email": "tuxracer@gmail.com",
-    "url": "https://github.com/tuxracer/"
+    "name": "Logan Koester",
+    "email": "logan@logankoester.com",
+    "url": "http://logankoester.com"
   },
   "contributors": [
+    {
+      "name": "Derek Petersen",
+      "email": "tuxracer@gmail.com",
+      "url": "https://github.com/tuxracer/"
+    },
     {
       "name": "Pascal Hartig",
       "email": "phartig@rdrei.net",
       "url": "http://yeoman.io"
-    },
-    {
-      "name": "Logan Koester",
-      "email": "logan@logankoester.com",
-      "url": "http://logankoester.com"
     }
   ],
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/logankoester/grunt-generator-generatorcs.git"
+    "url": "https://github.com/logankoester/generator-generator_grunt_coffee.git"
   },
   "scripts": {
     "test": "grunt test"
