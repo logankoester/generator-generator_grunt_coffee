@@ -92,7 +92,6 @@
       this.template('editorconfig', '.editorconfig');
       this.template('travis.yml', '.travis.yml');
       this.template('README.md');
-      this.template('LICENSE');
       return this.template('_Gruntfile.coffee', 'Gruntfile.coffee');
     };
 

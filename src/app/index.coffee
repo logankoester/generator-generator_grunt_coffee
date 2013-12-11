@@ -63,7 +63,6 @@ module.exports = class GeneratorGeneratorGruntCoffee extends yeoman.generators.B
     @template 'editorconfig', '.editorconfig'
     @template 'travis.yml', '.travis.yml'
     @template 'README.md'
-    @template 'LICENSE'
     @template '_Gruntfile.coffee', 'Gruntfile.coffee'
 
   gitfiles: ->
