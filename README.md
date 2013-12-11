@@ -4,6 +4,8 @@
 [![Dependency Status](https://david-dm.org/logankoester/generator-generator_grunt_coffee.png)](https://david-dm.org/logankoester/generator-generator_grunt_coffee)
 [![devDependency Status](https://david-dm.org/logankoester/generator-generator_grunt_coffee/dev-status.png)](https://david-dm.org/logankoester/generator-generator_grunt_coffee#info=devDependencies)
 
+[![NPM](https://nodei.co/npm/generator-generator_grunt_coffee.png?downloads=true)](https://nodei.co/npm/generator-generator_grunt_coffee/)
+
 `generator-generator_grunt_coffee` is a tool for generating
 [Yeoman generators](http://yeoman.io/generators.html) that use a
 [Grunt](http://gruntjs.com/)-based development workflow and the
