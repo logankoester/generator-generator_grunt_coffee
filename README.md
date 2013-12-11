@@ -25,6 +25,8 @@ Many thanks to [https://github.com/tuxracer/generator-generatorcs](generator-gen
 will be compiled to their original locations by the `grunt build` task.
 * Removes `jshint`, as presumably you are writing your generator in CoffeeScript and not JS.
 * Is itself written in CoffeeScript.
+* Removes LICENSE file from output. Use another package for this such as [mit](https://npmjs.org/package/mit).
+
 
 ## Commands
 
