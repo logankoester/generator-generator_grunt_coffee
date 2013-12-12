@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/logankoester/generator-generator_grunt_coffee.png)](https://travis-ci.org/logankoester/generator-generator_grunt_coffee)
 [![Dependency Status](https://david-dm.org/logankoester/generator-generator_grunt_coffee.png)](https://david-dm.org/logankoester/generator-generator_grunt_coffee)
 [![devDependency Status](https://david-dm.org/logankoester/generator-generator_grunt_coffee/dev-status.png)](https://david-dm.org/logankoester/generator-generator_grunt_coffee#info=devDependencies)
+[![Gittip](http://img.shields.io/gittip/logankoester.png)](https://www.gittip.com/logankoester/)
 
 [![NPM](https://nodei.co/npm/generator-generator_grunt_coffee.png?downloads=true)](https://nodei.co/npm/generator-generator_grunt_coffee/)
 
