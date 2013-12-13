@@ -1,16 +1,16 @@
 ### Yeoman Generator for Grunt-based CoffeeScript Yeoman Generators
+> `generator-generator_grunt_coffee` is a tool for generating
+[Yeoman generators](http://yeoman.io/generators.html) that use a
+[Grunt](http://gruntjs.com/)-based development workflow and the
+[CoffeeScript](http://coffeescript.org/) programming language.
 
 [![Build Status](https://travis-ci.org/logankoester/generator-generator_grunt_coffee.png)](https://travis-ci.org/logankoester/generator-generator_grunt_coffee)
+[![status](https://sourcegraph.com/api/repos/github.com/logankoester/generator-generator_grunt_coffee/badges/status.png)](https://sourcegraph.com/github.com/logankoester/generator-generator_grunt_coffee)
 [![Dependency Status](https://david-dm.org/logankoester/generator-generator_grunt_coffee.png)](https://david-dm.org/logankoester/generator-generator_grunt_coffee)
 [![devDependency Status](https://david-dm.org/logankoester/generator-generator_grunt_coffee/dev-status.png)](https://david-dm.org/logankoester/generator-generator_grunt_coffee#info=devDependencies)
 [![Gittip](http://img.shields.io/gittip/logankoester.png)](https://www.gittip.com/logankoester/)
 
 [![NPM](https://nodei.co/npm/generator-generator_grunt_coffee.png?downloads=true)](https://nodei.co/npm/generator-generator_grunt_coffee/)
-
-`generator-generator_grunt_coffee` is a tool for generating
-[Yeoman generators](http://yeoman.io/generators.html) that use a
-[Grunt](http://gruntjs.com/)-based development workflow and the
-[CoffeeScript](http://coffeescript.org/) programming language.
 
 Many thanks to [https://github.com/tuxracer/generator-generatorcs](generator-generatorcs) for inspiring this fork.
 
@@ -67,3 +67,10 @@ you.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/logankoester/generator-generator_grunt_coffee/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+[![xrefs](https://sourcegraph.com/api/repos/github.com/logankoester/generator-generator_grunt_coffee/badges/xrefs.png)](https://sourcegraph.com/github.com/logankoester/generator-generator_grunt_coffee)
+[![funcs](https://sourcegraph.com/api/repos/github.com/logankoester/generator-generator_grunt_coffee/badges/funcs.png)](https://sourcegraph.com/github.com/logankoester/generator-generator_grunt_coffee)
+[![top func](https://sourcegraph.com/api/repos/github.com/logankoester/generator-generator_grunt_coffee/badges/top-func.png)](https://sourcegraph.com/github.com/logankoester/generator-generator_grunt_coffee)
+[![library users](https://sourcegraph.com/api/repos/github.com/logankoester/generator-generator_grunt_coffee/badges/library-users.png)](https://sourcegraph.com/github.com/logankoester/generator-generator_grunt_coffee)
+[![authors](https://sourcegraph.com/api/repos/github.com/logankoester/generator-generator_grunt_coffee/badges/authors.png)](https://sourcegraph.com/github.com/logankoester/generator-generator_grunt_coffee)
+[![Total views](https://sourcegraph.com/api/repos/github.com/logankoester/generator-generator_grunt_coffee/counters/views.png)](https://sourcegraph.com/github.com/logankoester/generator-generator_grunt_coffee)
+[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/logankoester/generator-generator_grunt_coffee/counters/views-24h.png)](https://sourcegraph.com/github.com/logankoester/generator-generator_grunt_coffee)
