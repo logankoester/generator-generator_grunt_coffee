@@ -52,8 +52,7 @@
     }
 
     GeneratorGeneratorGruntCoffee.prototype.askFor = function() {
-      var done, generatorName, prompts,
-        _this = this;
+      var done, generatorName, prompts;
       done = this.async();
       generatorName = extractGeneratorName(this._, this.appname);
       console.log(this.yeoman);
@@ -68,12 +67,14 @@
           "default": generatorName
         }
       ];
-      return this.prompt(prompts, function(props) {
-        _this.githubUser = props.githubUser;
-        _this.generatorName = props.generatorName;
-        _this.appname = "generator-" + _this.generatorName;
-        return done();
-      });
+      return this.prompt(prompts, (function(_this) {
+        return function(props) {
+          _this.githubUser = props.githubUser;
+          _this.generatorName = props.generatorName;
+          _this.appname = "generator-" + _this.generatorName;
+          return done();
+        };
+      })(this));
     };
 
     GeneratorGeneratorGruntCoffee.prototype.userInfo = function() {
